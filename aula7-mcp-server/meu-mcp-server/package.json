@@ -1,0 +1,19 @@
+{
+  "name": "meu-mcp-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "MCP server do controle-financeiro: resumo do mês, só leitura (PDA semana 4).",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test",
+    "build": "node --check server.mjs && node --check ferramentas.mjs && node --check espiao.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.1.0",
+    "zod": "^4.2.0"
+  }
+}
